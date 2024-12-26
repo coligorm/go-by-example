@@ -17,9 +17,22 @@ repo to learn Go using site [GoByExample](https://gobyexample.com/)
 `example_list_of_strings := []string`
 - rand.Intn is used to return an int between 0:n  
 `rand.Intn(len(example_list_of_strings))`
+- for taking input from console:  
+`	reader := bufio.NewReader(os.Stdin)`  
+`	fmt.Print("Enter text: ")`  
+`	text, _ := reader.ReadString('\n')`  
+`	fmt.Println(text)`
+- trim any whitespace  
+`line = strings.TrimSpace(line)`
+- convert string to integer ("string converstion . ASCAII to Int [A to i]):  
+`strconv.Atoi.`
 
 ## Popular Import List
 - "fmt"
 - "error"
 - log
 - "math/rand" (random number generator module)
+- "bufio" (implements buffered I/O, used to take input from console)
+- "os" (used for file maniulation)
+- "strconv" (for string conversions)
+- "strings" (for string manipulation)
